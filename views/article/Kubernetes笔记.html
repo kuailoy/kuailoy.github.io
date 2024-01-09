@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Kubernetes笔记 | Kuailoy&#39;s Blog</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="Get busy living, or get busy dying">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.f2cee2f9.css" as="style"><link rel="preload" href="/assets/js/app.5a2ae76a.js" as="script"><link rel="preload" href="/assets/js/4.ff477fe3.js" as="script"><link rel="preload" href="/assets/js/1.2851c76d.js" as="script"><link rel="preload" href="/assets/js/21.f280ebaa.js" as="script"><link rel="prefetch" href="/assets/js/10.6c89e52a.js"><link rel="prefetch" href="/assets/js/11.c27d3bb1.js"><link rel="prefetch" href="/assets/js/12.c266121c.js"><link rel="prefetch" href="/assets/js/13.b0941e7b.js"><link rel="prefetch" href="/assets/js/14.2960fde2.js"><link rel="prefetch" href="/assets/js/15.8178cd4c.js"><link rel="prefetch" href="/assets/js/16.51e0a512.js"><link rel="prefetch" href="/assets/js/17.3f3a81d8.js"><link rel="prefetch" href="/assets/js/18.1b11a5a2.js"><link rel="prefetch" href="/assets/js/19.4ddc72f1.js"><link rel="prefetch" href="/assets/js/20.b83e4571.js"><link rel="prefetch" href="/assets/js/22.5cb0b36c.js"><link rel="prefetch" href="/assets/js/23.a6915afc.js"><link rel="prefetch" href="/assets/js/24.e6b9913e.js"><link rel="prefetch" href="/assets/js/25.8723d116.js"><link rel="prefetch" href="/assets/js/26.d137e78d.js"><link rel="prefetch" href="/assets/js/27.bb7d0023.js"><link rel="prefetch" href="/assets/js/28.f53f1844.js"><link rel="prefetch" href="/assets/js/29.4a2c0950.js"><link rel="prefetch" href="/assets/js/30.de397ca2.js"><link rel="prefetch" href="/assets/js/31.683f9a42.js"><link rel="prefetch" href="/assets/js/32.3505806b.js"><link rel="prefetch" href="/assets/js/33.cbcf6376.js"><link rel="prefetch" href="/assets/js/34.cbf8b22a.js"><link rel="prefetch" href="/assets/js/35.351779c5.js"><link rel="prefetch" href="/assets/js/36.6b614ac8.js"><link rel="prefetch" href="/assets/js/37.ec6ae891.js"><link rel="prefetch" href="/assets/js/38.9fb18659.js"><link rel="prefetch" href="/assets/js/39.aa3eb5a1.js"><link rel="prefetch" href="/assets/js/5.370fa96e.js"><link rel="prefetch" href="/assets/js/6.80ca6d97.js"><link rel="prefetch" href="/assets/js/7.240fcb43.js"><link rel="prefetch" href="/assets/js/8.cea61380.js"><link rel="prefetch" href="/assets/js/9.2107b831.js"><link rel="prefetch" href="/assets/js/vendors~flowchart.5f142d7f.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.f2cee2f9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-130b300a><div data-v-130b300a><div class="password-shadow password-wrapper-out" style="display:none;" data-v-25ba6db2 data-v-130b300a data-v-130b300a><h3 class="title" data-v-25ba6db2 data-v-25ba6db2>Kuailoy's Blog</h3> <p class="description" data-v-25ba6db2 data-v-25ba6db2>Get busy living, or get busy dying</p> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><span data-v-25ba6db2>kuailoy</span>
+            
+          <span data-v-25ba6db2>2019 - </span>
+          2024
+        </a></span></div></div> <div class="hide" data-v-130b300a><header class="navbar" data-v-130b300a><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/avatar.jpg" alt="Kuailoy's Blog" class="logo"> <span class="site-name">Kuailoy's Blog</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      Category
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/algorithm/" class="nav-link"><i class="undefined"></i>
+  algorithm
+</a></li><li class="dropdown-item"><!----> <a href="/categories/git/" class="nav-link"><i class="undefined"></i>
+  git
+</a></li><li class="dropdown-item"><!----> <a href="/categories/docker/" class="nav-link"><i class="undefined"></i>
+  docker
+</a></li><li class="dropdown-item"><!----> <a href="/categories/macOS/" class="nav-link"><i class="undefined"></i>
+  macOS
+</a></li><li class="dropdown-item"><!----> <a href="/categories/fontEnd/" class="nav-link"><i class="undefined"></i>
+  fontEnd
+</a></li><li class="dropdown-item"><!----> <a href="/categories/踩坑/" class="nav-link"><i class="undefined"></i>
+  踩坑
+</a></li><li class="dropdown-item"><!----> <a href="/categories/server/" class="nav-link"><i class="undefined"></i>
+  server
+</a></li><li class="dropdown-item"><!----> <a href="/categories/frontEnd/" class="nav-link"><i class="undefined"></i>
+  frontEnd
+</a></li><li class="dropdown-item"><!----> <a href="/categories/linux/" class="nav-link"><i class="undefined"></i>
+  linux
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/kuailoy" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-130b300a></div> <aside class="sidebar" data-v-130b300a><div class="personal-info-wrapper" data-v-39576ba9 data-v-130b300a><img src="/avatar.jpg" alt="author-avatar" class="personal-img" data-v-39576ba9> <h3 class="name" data-v-39576ba9>
+    kuailoy
+  </h3> <div class="num" data-v-39576ba9><div data-v-39576ba9><h3 data-v-39576ba9>28</h3> <h6 data-v-39576ba9>Articles</h6></div> <div data-v-39576ba9><h3 data-v-39576ba9>18</h3> <h6 data-v-39576ba9>Tags</h6></div></div> <ul class="social-links" data-v-39576ba9></ul> <hr data-v-39576ba9></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      Category
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/algorithm/" class="nav-link"><i class="undefined"></i>
+  algorithm
+</a></li><li class="dropdown-item"><!----> <a href="/categories/git/" class="nav-link"><i class="undefined"></i>
+  git
+</a></li><li class="dropdown-item"><!----> <a href="/categories/docker/" class="nav-link"><i class="undefined"></i>
+  docker
+</a></li><li class="dropdown-item"><!----> <a href="/categories/macOS/" class="nav-link"><i class="undefined"></i>
+  macOS
+</a></li><li class="dropdown-item"><!----> <a href="/categories/fontEnd/" class="nav-link"><i class="undefined"></i>
+  fontEnd
+</a></li><li class="dropdown-item"><!----> <a href="/categories/踩坑/" class="nav-link"><i class="undefined"></i>
+  踩坑
+</a></li><li class="dropdown-item"><!----> <a href="/categories/server/" class="nav-link"><i class="undefined"></i>
+  server
+</a></li><li class="dropdown-item"><!----> <a href="/categories/frontEnd/" class="nav-link"><i class="undefined"></i>
+  frontEnd
+</a></li><li class="dropdown-item"><!----> <a href="/categories/linux/" class="nav-link"><i class="undefined"></i>
+  linux
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/kuailoy" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-25ba6db2 data-v-130b300a><h3 class="title" data-v-25ba6db2 data-v-25ba6db2>Kubernetes笔记</h3> <!----> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><span data-v-25ba6db2>kuailoy</span>
+            
+          <span data-v-25ba6db2>2019 - </span>
+          2024
+        </a></span></div></div> <div data-v-130b300a><main class="page"><section><div class="page-title"><h1 class="title">Kubernetes笔记</h1> <div data-v-f875f3fc><i class="iconfont reco-account" data-v-f875f3fc><span data-v-f875f3fc>kuailoy</span></i> <i class="iconfont reco-date" data-v-f875f3fc><span data-v-f875f3fc>6/4/2020</span></i> <!----> <i class="tags iconfont reco-tag" data-v-f875f3fc><span class="tag-item" data-v-f875f3fc>docker k8s kubernetes</span></i></div></div> <div class="theme-reco-content content__default"><h2 id="kubernetes介绍"><a href="#kubernetes介绍" class="header-anchor">#</a> Kubernetes介绍</h2> <ul><li>产生 - 从单体应用到微服务 - 组件快速迭代 - 组件的部署</li> <li>需求 - 自动化调度、配置、监管和故障处理</li> <li>作用 - kubernetes为每个组件选择合适的服务器，并保证组件通信</li> <li>现状 - 越来越多的大公司把kubernetes作为运行应用的最佳平台，标准化了云端部署和内部部署的应用交付方式</li></ul> <h3 id="kubernetes系统的需求"><a href="#kubernetes系统的需求" class="header-anchor">#</a> kubernetes系统的需求</h3> <ul><li>从单体应用到微服务：微服务的扩容、部署和环境差异</li> <li>为应用程序提供一致的环境：不同生产机器的环境、生产环境和开发环境</li> <li>持续交付：DevOps和无运维 - 让同一团队参与应用的开发、部署、运维的整个生命周期，开发者、QA和运维团队彼此之间的合作需要贯穿整个流程</li> <li>NoOps：开发者部署应用本身，无需关心基础设施，无需与运维团队交涉，而运维团队不需要处理应用程序的独特性</li></ul> <p>kubernetes能够实现上述内容，它通过对实际硬件做抽象，将自身暴露成一个平台，允许开发者自己部署应用程序，让系统管理员聚焦于底层基础设施</p> <h2 id="核心概念"><a href="#核心概念" class="header-anchor">#</a> 核心概念</h2> <ul><li>Pod
+<ul><li>最小部署单元</li> <li>一组容器的集合</li> <li>容器共享网络</li> <li>生命周期是短暂的</li></ul></li> <li>Controller
+<ul><li>确保预期的pod副本的数量</li> <li>无状态/有状态应用部署</li> <li>确保所有的node运行同一个pod</li> <li>一次性任务和定时任务</li></ul></li> <li>Service
+<ul><li>定义一组pod的访问规则</li></ul></li> <li>存储</li> <li>调度器Ingress</li> <li>安全机制RBAC</li> <li>包管理工具Helm</li></ul> <h2 id="k8s集群架构组件"><a href="#k8s集群架构组件" class="header-anchor">#</a> k8s集群架构组件</h2> <p><img src="https://cdn.nlark.com/yuque/0/2021/png/1253531/1620351956729-0ab20a65-f3a9-4868-ae08-d163c1ef2a7b.png#clientId=ua963b0ed-4221-4&amp;from=paste&amp;height=286&amp;id=uecc676f5&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=286&amp;originWidth=748&amp;originalType=binary&amp;size=196957&amp;status=done&amp;style=none&amp;taskId=ub726b603-6312-49fe-9605-c1c0d41a59f&amp;width=748" alt="image.png"></p> <ul><li>Master Node（主控节点）
+<ul><li>API server: 集群统一入口，通过UI或CLI与集群进行交互，以RESTful方式，交给etcd存储</li> <li>scheduler: 节点调度，选择容器运行的node节点</li> <li>controller-manager: 处理集群中常规后台任务，一个资源对应一个控制器</li> <li>etcd: 存储系统，用于保存集群相关的状态和配置</li></ul></li> <li>node （工作节点）
+<ul><li>docker：容器技术</li> <li>pod: 容器调用的最小单位, 容器的集合</li> <li>kubelet: master派到node节点的代表，管理本机容器</li> <li>kube-proxy: 提供网络代理，负载均衡等操作</li> <li>fluentd: 日志的采集和查询</li></ul></li></ul> <h2 id="环境搭建"><a href="#环境搭建" class="header-anchor">#</a> 环境搭建</h2> <h3 id="工具"><a href="#工具" class="header-anchor">#</a> 工具</h3> <p>minikube (单节点）
+kubeadm（集群）
+kops （云端搭建）
+Tectonic
+play with kubenetes
+使用Google Kubernetes Engine托管Kubernetes 集群</p> <h3 id="minikube-环境搭建"><a href="#minikube-环境搭建" class="header-anchor">#</a> Minikube 环境搭建</h3> <p>安装kubectl
+安装minikube
+安装virtual box</p> <h3 id="单节点集群"><a href="#单节点集群" class="header-anchor">#</a> 单节点集群</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 启动minikube</span>
+$ minikube start
+
+<span class="token comment"># 查看状态</span>
+$ minikube status
+
+<span class="token comment"># 进入虚拟机</span>
+$ minikube <span class="token function">ssh</span>
+
+<span class="token comment"># 集群相关信息</span>
+$ kubectl config view
+$ kubectl config get-contexts
+$ kubectl cluster-info  <span class="token comment"># 当前集群信息</span>
+</code></pre></div><h3 id=""><a href="#" class="header-anchor">#</a></h3> <h2 id="pod"><a href="#pod" class="header-anchor">#</a> pod</h2> <ul><li>pod是一组并置的容器，代表kubernetes中的基本构建模块</li> <li>同一个pod中的容器运行于相同的Network命名空间、相同的loopback网络接口，可以通过localhost通信</li> <li>集群中的所有pod都在同一个共享网络地址空间中，可以通过ip地址相互访问</li> <li>容器不应该包含多个进程，pod也不应该包含多个不需要运行在同一主机上的容器</li></ul> <p>​</p> <p>查看已部署pod的完整YAML</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ kubectl get po <span class="token punctuation">[</span>pod名称<span class="token punctuation">]</span> -o yaml
+</code></pre></div><p>完整的YAML信息</p> <ul><li>apiVersion: v1  YAML描述文件所使用的kubernetes API版本</li> <li>kind：pod  Kubernetes对象/资源类型</li> <li>metadata  pod元数据（名称、标签和注解等）</li> <li>spec  pod规格/内容（pod的容器列表、volume等）</li> <li>status  pod及其内部容器的详细状态</li></ul> <h3 id="创建pod"><a href="#创建pod" class="header-anchor">#</a> 创建pod</h3> <p>​</p> <p>创建pod的YAML描述文件
+<img src="https://cdn.nlark.com/yuque/0/2021/png/1253531/1621835753224-5e3e0955-3074-4de0-8ab5-f33a44cf8983.png#clientId=u007d1473-228b-4&amp;from=paste&amp;height=361&amp;id=u6c2f1638&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=361&amp;originWidth=712&amp;originalType=binary&amp;size=92909&amp;status=done&amp;style=none&amp;taskId=uc5e65be2-1bb9-4a83-a356-3f2ae8dd601&amp;width=712" alt="image.png"></p> <p>创建pod</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ kubectl create -f kubia-manual.yaml
+</code></pre></div><p>查看节点pod</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ kubectl get pods
+</code></pre></div><p>查看pod日志（容器日志）</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ kubectl logs kubia-manual
+$ kubectl logs kubia-manual -c <span class="token punctuation">[</span>指定容器名称<span class="token punctuation">]</span>
+</code></pre></div><h3 id="-2"><a href="#-2" class="header-anchor">#</a></h3> <h3 id="向pod发送请求"><a href="#向pod发送请求" class="header-anchor">#</a> 向pod发送请求</h3> <p>创建service： 后文详述
+​</p> <p>端口转发（出于调试等原因）</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 本地端口8888转发到我们的kubia-manual pod的端口8080</span>
+$ kubectl port-forward kubia-manual <span class="token number">8888</span>:8080
+</code></pre></div><p>通过端口转发发送请求的简化图
+<img src="https://cdn.nlark.com/yuque/0/2021/png/1253531/1621837855334-35965ab1-2403-4657-acb7-4bcb43945e05.png#clientId=u007d1473-228b-4&amp;from=paste&amp;height=199&amp;id=uee0a9b00&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=199&amp;originWidth=841&amp;originalType=binary&amp;size=99437&amp;status=done&amp;style=none&amp;taskId=u7a835283-9012-4a01-9f1e-b42ca318eba&amp;width=841" alt="image.png"></p> <h3 id="标签-label"><a href="#标签-label" class="header-anchor">#</a> 标签 (label)</h3> <p>标签是可以附加到资源的任意键值对
+使用标签可以更好的组织pod和进行分类
+​</p> <p>创建pod指定标签</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token punctuation">..</span>.
+metadata:
+  name: kubia-manual-v2
+  labels:
+    creation_method: manual
+    env: prod
+<span class="token punctuation">..</span>.
+</code></pre></div><p>修改现有的pod标签</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 给pod添加标签</span>
+$ kubectl label po kubia-manual <span class="token assign-left variable">creation_method</span><span class="token operator">=</span>manual
+
+<span class="token comment"># 修改现有标签，需要使用--overwrite选项</span>
+$ kubectl label po kubia-manual-v2 <span class="token assign-left variable">env</span><span class="token operator">=</span>debug --overwrite
+</code></pre></div><p>通过标签选择器列出pod</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 列出creation_method=manual的pod</span>
+$ kubectl get po -l <span class="token assign-left variable">creation_method</span><span class="token operator">=</span>manual
+
+<span class="token comment"># 列出包含env标签的所有pod，无论其值如何</span>
+$ kubectl get po -l <span class="token function">env</span>
+
+<span class="token comment"># 列出没有env标签的pod</span>
+$ kubectl get po -l <span class="token string">'!env'</span>
+
+<span class="token comment"># 其他(验证失败)</span>
+<span class="token comment"># creation_method!=manual</span>
+<span class="token comment"># env in (prod, devel)</span>
+<span class="token comment"># env notin (prod, devel)</span>
+</code></pre></div><h4 id="通过标签选择器将pod调度到特定节点"><a href="#通过标签选择器将pod调度到特定节点" class="header-anchor">#</a> 通过标签选择器将pod调度到特定节点</h4> <p>给YAML文件增加nodeSelctor属性，如下</p> <div class="language-bash extra-class"><pre class="language-bash"><code>spec:
+  nodeSelector:
+    gpu: <span class="token string">&quot;true&quot;</span>
+</code></pre></div><p>这样，创建pod时，调度器将只在包含标签gpu=true的节点中选择
+​</p> <p>使用标签分类工作节点</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 给节点添加gpu=true标签</span>
+$ kubectl label node <span class="token punctuation">[</span>nodeName<span class="token punctuation">]</span> <span class="token assign-left variable">gpu</span><span class="token operator">=</span>true
+
+<span class="token comment"># 列出只包含标签gpu=true的节点</span>
+$ kubectl get nodes -l <span class="token assign-left variable">gpu</span><span class="token operator">=</span>true
+
+<span class="token comment"># 列出所有节点, 附加gpu标签值列</span>
+$ kubectl get nodes -L gpu
+</code></pre></div><p>将pod调度到特定节点</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ kubectl create -f kubia-gpu.yaml
+</code></pre></div><p>​</p> <h3 id="注解-annotations"><a href="#注解-annotations" class="header-anchor">#</a> 注解 (annotations)</h3> <p>pod和其他对象还可以包含注解，注解也是键值对
+注解不能像标签一样用于对对象进行分组</p> <h4 id="查看对象的注解"><a href="#查看对象的注解" class="header-anchor">#</a> 查看对象的注解</h4> <div class="language-bash extra-class"><pre class="language-bash"><code>$ kubectl get po <span class="token punctuation">[</span>podName<span class="token punctuation">]</span> -o yaml
+<span class="token comment"># 或</span>
+$ kubectl describe <span class="token punctuation">[</span>podName<span class="token punctuation">]</span>
+</code></pre></div><p>添加和修改注解</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ kubectl annotate pod <span class="token punctuation">[</span>podName<span class="token punctuation">]</span> mycompany.com/someannotation<span class="token operator">=</span><span class="token string">&quot;foo bar&quot;</span>
+</code></pre></div><h3 id="命名空间"><a href="#命名空间" class="header-anchor">#</a> 命名空间</h3> <p>命名空间简单的为对象名称提供了一个作用域，不同的命名空间可以包含同名的资源</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 列出集群中所有命名空间</span>
+$ kubectl get ns
+
+<span class="token comment"># 查看指定命名空间的pod</span>
+$ kubectl get po --namespace kube-system
+<span class="token comment">#	使用-n代替--namespace</span>
+$ kubectl get po -n kube-system
+</code></pre></div><h4 id="创建命名空间"><a href="#创建命名空间" class="header-anchor">#</a> 创建命名空间</h4> <p>从YAML文件创建命名空间：
+创建一个custom-namespace.yaml文件，如下
+<img src="https://cdn.nlark.com/yuque/0/2021/png/1253531/1621927345581-b9324aa2-31f4-439e-843e-cef94ecde9bd.png#clientId=u2f2dc01c-f0aa-4&amp;from=paste&amp;height=155&amp;id=ubbb7bb4f&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=155&amp;originWidth=662&amp;originalType=binary&amp;size=33562&amp;status=done&amp;style=none&amp;taskId=uefaa52d8-92d8-4d7c-b944-576b3413e84&amp;width=662" alt="image.png"></p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ kubectl create -f custom-namespace.yaml
+</code></pre></div><p>使用kubectl create namespace命令创建</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ kubectl create namespace custom-namespace
+</code></pre></div><h4 id="管理其他命名空间中的对象"><a href="#管理其他命名空间中的对象" class="header-anchor">#</a> 管理其他命名空间中的对象</h4> <p>在其他命名空间中创建资源</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ kubectl create -f kubia-manual.yaml -n custom-namespace
+</code></pre></div><p>当前上下文和当前上下文的命名空间可以通过kubectl config 命令进行更改
+可以设置下列别名：</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token builtin class-name">alias</span> <span class="token assign-left variable">kcd</span><span class="token operator">=</span><span class="token string">'kubectl config set-context <span class="token variable"><span class="token variable">$(</span>kubectl config current-context<span class="token variable">)</span></span> --namespace'</span>default
+</code></pre></div><p>然后，可以使用kcd some-namespace在命名空间之间进行切换
+​</p> <p>命名空间是否隔离取决于kubernetes使用的网络解决方案
+​</p> <h3 id="停止和删除pod"><a href="#停止和删除pod" class="header-anchor">#</a> 停止和删除pod</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 按名称删除pod</span>
+$ kubectl delete po kubia-gpu
+
+<span class="token comment"># 删除多个pod</span>
+$ kubectl delete po pod1 pod2
+
+<span class="token comment"># 使用标签选择器删除pod</span>
+$ kubectl delete po -l <span class="token assign-left variable">creation_method</span><span class="token operator">=</span>manual
+
+<span class="token comment"># 通过删除整个命名空间来删除pod</span>
+$ kubectl delete ns custom-namespace
+
+<span class="token comment"># 删除命名空间中所有pod，但保留命名空间</span>
+$ kubectl delete po -all
+
+<span class="token comment"># 删除命名空间中的所有资源</span>
+$ kubectl delete all -all
+</code></pre></div><h3 id="存活探针-liveness-probe"><a href="#存活探针-liveness-probe" class="header-anchor">#</a> 存活探针（liveness probe）</h3> <p>Kubernetes可以通过存活探针检查容器是否还在运行，可以为pod中的每个容器单独指定存活探针，如果探测失败，kubernetes将定期执行探针并重新启动容器
+​</p> <p>Kubernetes有以下三种探测容器的机制</p> <ul><li>HTTP GET 探针对容器的IP地址（你指定的端口和路径）执行HTTP GET请求</li> <li>TCP套接字探针尝试与容器建立TCP链接，成功建立则探测成功</li> <li>Exec探针在容器内执行任意命令，并检查命令的退出状态码是0则探测成功</li></ul> <h4 id="-3"><a href="#-3" class="header-anchor">#</a></h4> <h4 id="创建基于http的存活探针"><a href="#创建基于http的存活探针" class="header-anchor">#</a> 创建基于HTTP的存活探针</h4> <p>YAML相关配置
+<img src="https://cdn.nlark.com/yuque/0/2021/png/1253531/1622105931372-87254d38-5366-48dd-a6fb-abffbab527b1.png#clientId=ue59f7bae-d427-4&amp;from=paste&amp;height=384&amp;id=ucbb2905b&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=384&amp;originWidth=893&amp;originalType=binary&amp;size=75559&amp;status=done&amp;style=none&amp;taskId=uf4d22c7d-014a-4335-9e74-5dcb938f81b&amp;width=893" alt="image.png"></p> <p>获取崩溃容器的日志</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 当前容器的日志</span>
+$ kubectl logs mypod
+
+<span class="token comment"># 前一个容器的日志</span>
+$ kubectl logs mypod --previous
+</code></pre></div><p>通过查看kubectl describe可以了解容器重启原因
+​</p> <h4 id="存活探针的附加配置"><a href="#存活探针的附加配置" class="header-anchor">#</a> 存活探针的附加配置</h4> <p>存活探针可以增加附加配置，例如要设置初始延迟</p> <div class="language-bash extra-class"><pre class="language-bash"><code>livenessProbe:
+  httpGet:
+    path: /
+    port: <span class="token number">8080</span>
+  initialDelaySeconds: <span class="token number">15</span>
+</code></pre></div><p>如果不设置初始延迟，通常会导致探测失败，因为程序还没准备好
+​</p> <h4 id="创建有效的存活探针"><a href="#创建有效的存活探针" class="header-anchor">#</a> 创建有效的存活探针</h4> <ul><li>给探针配置特定的URL路径，并让应用从内部对重要组件执行状态检查</li> <li>保持探针轻量，不应消耗太多资源</li> <li>无须在探针中实现重试循环，kubernetes会尝试若干次</li> <li>存活探针失败时由节点的kubelet执行重启操作，如果节点本身崩溃，将无法执行任何操作</li></ul> <p>​</p> <h2 id="replicationcontroller"><a href="#replicationcontroller" class="header-anchor">#</a> ReplicationController</h2> <p>节点故障时，ReplicationController管理的pod会被重新创建
+ReplicationController的工作是确保pod数量始终与其标签选择器相匹配
+<img src="https://cdn.nlark.com/yuque/0/2021/png/1253531/1622191991804-dc0a6258-4099-4002-ac46-b7ad4d97d36e.png#clientId=ue59f7bae-d427-4&amp;from=paste&amp;height=482&amp;id=uf5ebc59a&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=482&amp;originWidth=854&amp;originalType=binary&amp;size=123523&amp;status=done&amp;style=none&amp;taskId=u712cf804-7140-425b-8f91-f3bbe762c13&amp;width=854" alt="image.png">
+ReplicationController的三部分</p> <ul><li>label selector (标签选择器)，用于确定ReplicationController作用域中有哪些pod</li> <li>replica count (副本个数)，指定应运行的pod数量</li> <li>pod template (pod模板)， 用于创建新的pod副本</li></ul> <p>其中，只有更改副本个数，会影响现有的pod
+更改标签选择器和pod模板，会使现有pod脱离ReplicationController的范围
+​</p> <p>使用RepicationController的好处</p> <ul><li>确保一个pod持续运行，方法是在现有pod丢失时启动一个新的pod</li> <li>集群节点发生故障时，会给故障节点上运行的所有pod创建替代副本</li> <li>能够轻松实现pod的水平伸缩</li></ul> <h3 id="创建一个replicationcontroller"><a href="#创建一个replicationcontroller" class="header-anchor">#</a> 创建一个ReplicationController</h3> <p><img src="https://cdn.nlark.com/yuque/0/2021/png/1253531/1622195915351-2e043e6b-a5b8-4a81-917b-ce3627d5ff28.png#clientId=ue59f7bae-d427-4&amp;from=paste&amp;height=458&amp;id=u9f786fed&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=458&amp;originWidth=821&amp;originalType=binary&amp;size=103644&amp;status=done&amp;style=none&amp;taskId=u089ea7aa-6c36-49ab-87a5-092c02891b6&amp;width=821" alt="image.png"></p> <p>定义ReplicationContrller时不要指定pod选择器，让Kubernetes从pod模板中提取它，这样YAML更简短
+​</p> <p>使用kubectl create命令</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ kubectl create -f kubai-rc.yaml
+</code></pre></div><p>之后可以查看pod，来看ReplicationController是否工作</p></div></section> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">2/22/2022, 3:17:02 PM</span></div></footer> <!----> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:12rem;" data-v-cb1513f6><li class="level-2" data-v-cb1513f6><a href="/views/article/Kubernetes%E7%AC%94%E8%AE%B0.html#kubernetes介绍" class="sidebar-link reco-side-kubernetes介绍" data-v-cb1513f6>Kubernetes介绍</a></li><li class="level-3" data-v-cb1513f6><a href="/views/article/Kubernetes%E7%AC%94%E8%AE%B0.html#kubernetes系统的需求" class="sidebar-link reco-side-kubernetes系统的需求" data-v-cb1513f6>kubernetes系统的需求</a></li><li class="level-2" data-v-cb1513f6><a href="/views/article/Kubernetes%E7%AC%94%E8%AE%B0.html#核心概念" class="sidebar-link reco-side-核心概念" data-v-cb1513f6>核心概念</a></li><li class="level-2" data-v-cb1513f6><a href="/views/article/Kubernetes%E7%AC%94%E8%AE%B0.html#k8s集群架构组件" class="sidebar-link reco-side-k8s集群架构组件" data-v-cb1513f6>k8s集群架构组件</a></li><li class="level-2" data-v-cb1513f6><a href="/views/article/Kubernetes%E7%AC%94%E8%AE%B0.html#环境搭建" class="sidebar-link reco-side-环境搭建" data-v-cb1513f6>环境搭建</a></li><li class="level-3" data-v-cb1513f6><a href="/views/article/Kubernetes%E7%AC%94%E8%AE%B0.html#工具" class="sidebar-link reco-side-工具" data-v-cb1513f6>工具</a></li><li class="level-3" data-v-cb1513f6><a href="/views/article/Kubernetes%E7%AC%94%E8%AE%B0.html#minikube-环境搭建" class="sidebar-link reco-side-minikube-环境搭建" data-v-cb1513f6>Minikube 环境搭建</a></li><li class="level-3" data-v-cb1513f6><a href="/views/article/Kubernetes%E7%AC%94%E8%AE%B0.html#单节点集群" class="sidebar-link reco-side-单节点集群" data-v-cb1513f6>单节点集群</a></li><li class="level-3" data-v-cb1513f6><a href="/views/article/Kubernetes%E7%AC%94%E8%AE%B0.html#" class="sidebar-link reco-side-" data-v-cb1513f6></a></li><li class="level-2" data-v-cb1513f6><a href="/views/article/Kubernetes%E7%AC%94%E8%AE%B0.html#pod" class="sidebar-link reco-side-pod" data-v-cb1513f6>pod</a></li><li class="level-3" data-v-cb1513f6><a href="/views/article/Kubernetes%E7%AC%94%E8%AE%B0.html#创建pod" class="sidebar-link reco-side-创建pod" data-v-cb1513f6>创建pod</a></li><li class="level-3" data-v-cb1513f6><a href="/views/article/Kubernetes%E7%AC%94%E8%AE%B0.html#-2" class="sidebar-link reco-side--2" data-v-cb1513f6></a></li><li class="level-3" data-v-cb1513f6><a href="/views/article/Kubernetes%E7%AC%94%E8%AE%B0.html#向pod发送请求" class="sidebar-link reco-side-向pod发送请求" data-v-cb1513f6>向pod发送请求</a></li><li class="level-3" data-v-cb1513f6><a href="/views/article/Kubernetes%E7%AC%94%E8%AE%B0.html#标签-label" class="sidebar-link reco-side-标签-label" data-v-cb1513f6>标签 (label)</a></li><li class="level-3" data-v-cb1513f6><a href="/views/article/Kubernetes%E7%AC%94%E8%AE%B0.html#注解-annotations" class="sidebar-link reco-side-注解-annotations" data-v-cb1513f6>注解 (annotations)</a></li><li class="level-3" data-v-cb1513f6><a href="/views/article/Kubernetes%E7%AC%94%E8%AE%B0.html#命名空间" class="sidebar-link reco-side-命名空间" data-v-cb1513f6>命名空间</a></li><li class="level-3" data-v-cb1513f6><a href="/views/article/Kubernetes%E7%AC%94%E8%AE%B0.html#停止和删除pod" class="sidebar-link reco-side-停止和删除pod" data-v-cb1513f6>停止和删除pod</a></li><li class="level-3" data-v-cb1513f6><a href="/views/article/Kubernetes%E7%AC%94%E8%AE%B0.html#存活探针-liveness-probe" class="sidebar-link reco-side-存活探针-liveness-probe" data-v-cb1513f6>存活探针（liveness probe）</a></li><li class="level-2" data-v-cb1513f6><a href="/views/article/Kubernetes%E7%AC%94%E8%AE%B0.html#replicationcontroller" class="sidebar-link reco-side-replicationcontroller" data-v-cb1513f6>ReplicationController</a></li><li class="level-3" data-v-cb1513f6><a href="/views/article/Kubernetes%E7%AC%94%E8%AE%B0.html#创建一个replicationcontroller" class="sidebar-link reco-side-创建一个replicationcontroller" data-v-cb1513f6>创建一个ReplicationController</a></li></ul></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/assets/js/app.5a2ae76a.js" defer></script><script src="/assets/js/4.ff477fe3.js" defer></script><script src="/assets/js/1.2851c76d.js" defer></script><script src="/assets/js/21.f280ebaa.js" defer></script>
+  </body>
+</html>

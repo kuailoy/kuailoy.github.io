@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Docker笔记 | Kuailoy&#39;s Blog</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="Get busy living, or get busy dying">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.f2cee2f9.css" as="style"><link rel="preload" href="/assets/js/app.5a2ae76a.js" as="script"><link rel="preload" href="/assets/js/4.ff477fe3.js" as="script"><link rel="preload" href="/assets/js/1.2851c76d.js" as="script"><link rel="preload" href="/assets/js/19.4ddc72f1.js" as="script"><link rel="prefetch" href="/assets/js/10.6c89e52a.js"><link rel="prefetch" href="/assets/js/11.c27d3bb1.js"><link rel="prefetch" href="/assets/js/12.c266121c.js"><link rel="prefetch" href="/assets/js/13.b0941e7b.js"><link rel="prefetch" href="/assets/js/14.2960fde2.js"><link rel="prefetch" href="/assets/js/15.8178cd4c.js"><link rel="prefetch" href="/assets/js/16.51e0a512.js"><link rel="prefetch" href="/assets/js/17.3f3a81d8.js"><link rel="prefetch" href="/assets/js/18.1b11a5a2.js"><link rel="prefetch" href="/assets/js/20.b83e4571.js"><link rel="prefetch" href="/assets/js/21.f280ebaa.js"><link rel="prefetch" href="/assets/js/22.5cb0b36c.js"><link rel="prefetch" href="/assets/js/23.a6915afc.js"><link rel="prefetch" href="/assets/js/24.e6b9913e.js"><link rel="prefetch" href="/assets/js/25.8723d116.js"><link rel="prefetch" href="/assets/js/26.d137e78d.js"><link rel="prefetch" href="/assets/js/27.bb7d0023.js"><link rel="prefetch" href="/assets/js/28.f53f1844.js"><link rel="prefetch" href="/assets/js/29.4a2c0950.js"><link rel="prefetch" href="/assets/js/30.de397ca2.js"><link rel="prefetch" href="/assets/js/31.683f9a42.js"><link rel="prefetch" href="/assets/js/32.3505806b.js"><link rel="prefetch" href="/assets/js/33.cbcf6376.js"><link rel="prefetch" href="/assets/js/34.cbf8b22a.js"><link rel="prefetch" href="/assets/js/35.351779c5.js"><link rel="prefetch" href="/assets/js/36.6b614ac8.js"><link rel="prefetch" href="/assets/js/37.ec6ae891.js"><link rel="prefetch" href="/assets/js/38.9fb18659.js"><link rel="prefetch" href="/assets/js/39.aa3eb5a1.js"><link rel="prefetch" href="/assets/js/5.370fa96e.js"><link rel="prefetch" href="/assets/js/6.80ca6d97.js"><link rel="prefetch" href="/assets/js/7.240fcb43.js"><link rel="prefetch" href="/assets/js/8.cea61380.js"><link rel="prefetch" href="/assets/js/9.2107b831.js"><link rel="prefetch" href="/assets/js/vendors~flowchart.5f142d7f.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.f2cee2f9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-130b300a><div data-v-130b300a><div class="password-shadow password-wrapper-out" style="display:none;" data-v-25ba6db2 data-v-130b300a data-v-130b300a><h3 class="title" data-v-25ba6db2 data-v-25ba6db2>Kuailoy's Blog</h3> <p class="description" data-v-25ba6db2 data-v-25ba6db2>Get busy living, or get busy dying</p> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><span data-v-25ba6db2>kuailoy</span>
+            
+          <span data-v-25ba6db2>2019 - </span>
+          2024
+        </a></span></div></div> <div class="hide" data-v-130b300a><header class="navbar" data-v-130b300a><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/avatar.jpg" alt="Kuailoy's Blog" class="logo"> <span class="site-name">Kuailoy's Blog</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      Category
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/algorithm/" class="nav-link"><i class="undefined"></i>
+  algorithm
+</a></li><li class="dropdown-item"><!----> <a href="/categories/git/" class="nav-link"><i class="undefined"></i>
+  git
+</a></li><li class="dropdown-item"><!----> <a href="/categories/docker/" class="nav-link"><i class="undefined"></i>
+  docker
+</a></li><li class="dropdown-item"><!----> <a href="/categories/macOS/" class="nav-link"><i class="undefined"></i>
+  macOS
+</a></li><li class="dropdown-item"><!----> <a href="/categories/fontEnd/" class="nav-link"><i class="undefined"></i>
+  fontEnd
+</a></li><li class="dropdown-item"><!----> <a href="/categories/踩坑/" class="nav-link"><i class="undefined"></i>
+  踩坑
+</a></li><li class="dropdown-item"><!----> <a href="/categories/server/" class="nav-link"><i class="undefined"></i>
+  server
+</a></li><li class="dropdown-item"><!----> <a href="/categories/frontEnd/" class="nav-link"><i class="undefined"></i>
+  frontEnd
+</a></li><li class="dropdown-item"><!----> <a href="/categories/linux/" class="nav-link"><i class="undefined"></i>
+  linux
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/kuailoy" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-130b300a></div> <aside class="sidebar" data-v-130b300a><div class="personal-info-wrapper" data-v-39576ba9 data-v-130b300a><img src="/avatar.jpg" alt="author-avatar" class="personal-img" data-v-39576ba9> <h3 class="name" data-v-39576ba9>
+    kuailoy
+  </h3> <div class="num" data-v-39576ba9><div data-v-39576ba9><h3 data-v-39576ba9>28</h3> <h6 data-v-39576ba9>Articles</h6></div> <div data-v-39576ba9><h3 data-v-39576ba9>18</h3> <h6 data-v-39576ba9>Tags</h6></div></div> <ul class="social-links" data-v-39576ba9></ul> <hr data-v-39576ba9></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      Category
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/algorithm/" class="nav-link"><i class="undefined"></i>
+  algorithm
+</a></li><li class="dropdown-item"><!----> <a href="/categories/git/" class="nav-link"><i class="undefined"></i>
+  git
+</a></li><li class="dropdown-item"><!----> <a href="/categories/docker/" class="nav-link"><i class="undefined"></i>
+  docker
+</a></li><li class="dropdown-item"><!----> <a href="/categories/macOS/" class="nav-link"><i class="undefined"></i>
+  macOS
+</a></li><li class="dropdown-item"><!----> <a href="/categories/fontEnd/" class="nav-link"><i class="undefined"></i>
+  fontEnd
+</a></li><li class="dropdown-item"><!----> <a href="/categories/踩坑/" class="nav-link"><i class="undefined"></i>
+  踩坑
+</a></li><li class="dropdown-item"><!----> <a href="/categories/server/" class="nav-link"><i class="undefined"></i>
+  server
+</a></li><li class="dropdown-item"><!----> <a href="/categories/frontEnd/" class="nav-link"><i class="undefined"></i>
+  frontEnd
+</a></li><li class="dropdown-item"><!----> <a href="/categories/linux/" class="nav-link"><i class="undefined"></i>
+  linux
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/kuailoy" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-25ba6db2 data-v-130b300a><h3 class="title" data-v-25ba6db2 data-v-25ba6db2>Docker笔记</h3> <!----> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><span data-v-25ba6db2>kuailoy</span>
+            
+          <span data-v-25ba6db2>2019 - </span>
+          2024
+        </a></span></div></div> <div data-v-130b300a><main class="page"><section><div class="page-title"><h1 class="title">Docker笔记</h1> <div data-v-f875f3fc><i class="iconfont reco-account" data-v-f875f3fc><span data-v-f875f3fc>kuailoy</span></i> <i class="iconfont reco-date" data-v-f875f3fc><span data-v-f875f3fc>4/19/2021</span></i> <!----> <i class="tags iconfont reco-tag" data-v-f875f3fc><span class="tag-item" data-v-f875f3fc>docker</span></i></div></div> <div class="theme-reco-content content__default"><div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 查看docker版本信息</span>
+docker version
+</code></pre></div><h3 id="docker-image"><a href="#docker-image" class="header-anchor">#</a> Docker Image</h3> <ul><li>文件和meta data 的集合（root filesystem）</li> <li>分层的，并且每一层都可以添加改变删除文件，成为一个新的Image</li> <li>不同的Image可以共享相同的layer</li> <li>Image本身是read-only的</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 查看本地安装的image</span>
+$ docker image <span class="token function">ls</span>
+<span class="token comment">#等同于</span>
+$ docker images
+
+<span class="token comment"># Pull from Registry</span>
+docker pull ubuntu:14.04
+
+<span class="token comment"># 删除 image 文件</span>
+$ docker image <span class="token function">rm</span> <span class="token punctuation">[</span>imageName<span class="token punctuation">]</span>
+<span class="token comment"># 等同于</span>
+$ docker rmi <span class="token punctuation">[</span>imageID<span class="token punctuation">]</span>
+
+</code></pre></div><h3 id="docker-container"><a href="#docker-container" class="header-anchor">#</a> Docker Container</h3> <p>image 文件生成的容器实例，本身也是一个文件，称为容器文件**。**也就是说，一旦容器生成，就会同时存在两个文件： image 文件和容器文件。而且关闭容器并不会删除容器文件，只是容器停止运行而已</p> <ul><li>通过Image创建（copy）</li> <li>在Image layer之上建立一个container layer（可读写）</li> <li>类比面向对象：类和实例</li> <li>Image负责app的存储和分发，Container负责运行app</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code>
+<span class="token comment"># 列出本机正在运行的容器</span>
+$ docker container <span class="token function">ls</span>
+
+<span class="token comment"># 列出本机所有容器，包括终止运行的容器</span>
+$ docker container <span class="token function">ls</span> --all
+<span class="token comment"># 等同于</span>
+$ docker <span class="token function">ps</span> -a
+
+<span class="token comment"># 运行image</span>
+$ docker container run hello-world
+
+<span class="token comment"># 终止容器</span>
+$ docker container <span class="token function">kill</span> <span class="token punctuation">[</span>containID<span class="token punctuation">]</span>
+
+<span class="token comment"># 删除容器</span>
+$ docker container <span class="token function">rm</span> <span class="token punctuation">[</span>containerID<span class="token punctuation">]</span>
+<span class="token comment"># 等同于</span>
+$ docker <span class="token function">rm</span> <span class="token punctuation">[</span>containerID<span class="token punctuation">]</span>
+
+<span class="token comment"># 列出所有容器ID</span>
+$ docker container <span class="token function">ls</span> -aq
+
+<span class="token comment"># 删除所有容器</span>
+$ docker <span class="token function">rm</span> <span class="token variable"><span class="token variable">$(</span>docker container <span class="token function">ls</span> -aq<span class="token variable">)</span></span>
+
+<span class="token comment"># 列出所有退出容器ID</span>
+$ docker container <span class="token function">ls</span> -f <span class="token string">&quot;status=exited&quot;</span> -q
+
+<span class="token comment"># 删除所有退出容器</span>
+$ docker <span class="token function">rm</span> <span class="token variable"><span class="token variable">$(</span>docker container <span class="token function">ls</span> -f <span class="token string">&quot;status=exited&quot;</span> -q<span class="token variable">)</span></span>
+</code></pre></div><h3 id="制作自己的docker-image-container"><a href="#制作自己的docker-image-container" class="header-anchor">#</a> 制作自己的docker image/container</h3> <p>常用的方法有两种</p> <h4 id="_1-基于container创建image-不建议"><a href="#_1-基于container创建image-不建议" class="header-anchor">#</a> 1. 基于container创建image（不建议）</h4> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 示例</span>
+$ docker commit <span class="token punctuation">[</span>containerName<span class="token punctuation">]</span> <span class="token punctuation">[</span>newImageName:tag<span class="token punctuation">]</span>
+
+<span class="token comment"># 用下面的命令查看image layer</span>
+$ docker <span class="token function">history</span> <span class="token punctuation">[</span>imageId<span class="token punctuation">]</span>
+
+</code></pre></div><p>可以看到，生成container的image和新的image有很多层是共享的，只是在原基础上加了一层</p> <h4 id="_2-基于dockerfile"><a href="#_2-基于dockerfile" class="header-anchor">#</a> 2. 基于Dockerfile</h4> <p>编写dockerfile/.dockerignore
+<code>.dockerignore</code> 示例</p> <div class="language- extra-class"><pre class="language-text"><code>
+.git
+node_modules
+npm-debug.log
+
+</code></pre></div><p><code>dockerfile</code></p> <div class="language-dockerfile extra-class"><pre class="language-dockerfile"><code>
+<span class="token keyword">FROM</span> node<span class="token punctuation">:</span>8.4
+<span class="token keyword">COPY</span> . /app
+<span class="token keyword">WORKDIR</span> /app
+<span class="token keyword">RUN</span> <span class="token punctuation">[</span><span class="token string">&quot;npm&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;install&quot;</span><span class="token punctuation">]</span>
+<span class="token keyword">EXPOSE</span> 3000/tcp
+
+<span class="token comment"># CMD表示容器启动后自动执行的命令，指定了CMD命令以后，docker container run命令就不能附加命令了</span>
+<span class="token keyword">CMD</span> node demos/01.js
+
+</code></pre></div><p>创建image文件</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># -t 指定image名称，冒号后面跟版本号，不指定的话就是latest</span>
+<span class="token comment"># 最后的点表示dockerfile文件的路径</span>
+$ docker image build -t koa-demo <span class="token builtin class-name">.</span>
+<span class="token comment"># 或者</span>
+$ docker image build -t koa-demo:0.0.1 <span class="token builtin class-name">.</span>
+</code></pre></div><p>创建成功后，查看image就可以看到新生成的image</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ docker image <span class="token function">ls</span>
+</code></pre></div><h3 id="生成容器"><a href="#生成容器" class="header-anchor">#</a> 生成容器</h3> <div class="language-bash extra-class"><pre class="language-bash"><code>
+$ docker container run -p <span class="token number">8000</span>:3000 -it koa-demo /bin/bash
+<span class="token comment"># 或者</span>
+$ docker container run -p <span class="token number">8000</span>:3000 -it koa-demo:0.0.1 /bin/bash
+</code></pre></div><ul><li><code>-p</code>参数：容器的 3000 端口映射到本机的 8000 端口。</li> <li><code>-it</code>参数：容器的 Shell 映射到当前的 Shell，然后你在本机窗口输入的命令，就会传入容器。</li> <li><code>koa-demo:0.0.1</code>：image 文件的名字（如果有标签，还需要提供标签，默认是 latest 标签）。</li> <li><code>/bin/bash</code>：容器启动以后，内部第一个执行的命令。这里是启动 Bash，保证用户可以使用 Shell。</li></ul> <h3 id="终止容器"><a href="#终止容器" class="header-anchor">#</a> 终止容器</h3> <p>在容器的命令行，按下 Ctrl + c 停止 Node 进程（如果有），然后按下 Ctrl + d （或者输入 exit）退出容器
+也可以用 <code>docker container kill</code> 终止容器运行。容器停止运行之后，并不会消失，使用 <code>docker container rm</code> 命令删除容器文件。</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 在本机的另一个终端窗口，查出容器的 ID</span>
+$ docker container <span class="token function">ls</span>
+
+<span class="token comment"># 停止指定的容器运行</span>
+$ docker container <span class="token function">kill</span> <span class="token punctuation">[</span>containerID<span class="token punctuation">]</span>
+
+<span class="token comment"># 查出容器的 ID</span>
+$ docker container <span class="token function">ls</span> --all
+
+<span class="token comment"># 删除指定的容器文件(id不需要写全)</span>
+$ docker container <span class="token function">rm</span> <span class="token punctuation">[</span>containerID<span class="token punctuation">]</span>
+
+``<span class="token variable"><span class="token variable">`</span>dockerfile
+<span class="token comment">### Dockerfile</span>
+<span class="token comment">#### FROM</span>
+<span class="token variable">`</span></span>``bash
+<span class="token comment"># 制作base image</span>
+FROM scratch
+
+<span class="token comment"># 使用base image</span>
+FROM centos
+<span class="token comment"># 或</span>
+FROM ubuntu:14.04
+</code></pre></div><p>功能：描述当前image的base image
+最佳实践：出于安全性考虑，尽量使用官方的image作为base image</p> <h4 id="label"><a href="#label" class="header-anchor">#</a> LABEL</h4> <div class="language-bash extra-class"><pre class="language-bash"><code>LABEL <span class="token assign-left variable">maintainer</span><span class="token operator">=</span><span class="token string">&quot;kuailoy@gmail.com&quot;</span>
+LABEL <span class="token assign-left variable">version</span><span class="token operator">=</span><span class="token string">&quot;1.0&quot;</span>
+LABEL <span class="token assign-left variable">description</span><span class="token operator">=</span><span class="token string">&quot;This is description&quot;</span>
+</code></pre></div><p>功能：定义image的meta data，描述image的一些信息
+最佳实践：LABEL信息必不可少</p> <h4 id="run"><a href="#run" class="header-anchor">#</a> RUN</h4> <div class="language-bash extra-class"><pre class="language-bash"><code>RUN yum update <span class="token operator">&amp;&amp;</span> yum <span class="token function">install</span> -y <span class="token function">vim</span> <span class="token punctuation">\</span>
+		python-dev  <span class="token comment"># 反斜线换行</span>
+
+RUN <span class="token function">npm</span> <span class="token function">install</span>
+</code></pre></div><p>功能：运行命令，安装软件、依赖时常用
+最佳实践：避免无用分层，多条命令合并层一行，复杂的RUN用反斜线换行</p> <h4 id="workdir"><a href="#workdir" class="header-anchor">#</a> WORKDIR</h4> <div class="language-bash extra-class"><pre class="language-bash"><code>WORKDIR /root
+
+WORKDIR /test
+WORKDIR demo
+RUN <span class="token builtin class-name">pwd</span>  <span class="token comment"># 输出结果应该是test/demo</span>
+</code></pre></div><p>功能：改变工作目录
+最佳实践：尽量使用绝对目录，使用WORKDIR，不要用RUN cd</p> <h4 id="add-copy"><a href="#add-copy" class="header-anchor">#</a> ADD &amp; COPY</h4> <div class="language-bash extra-class"><pre class="language-bash"><code>ADD hello /
+
+<span class="token comment"># 添加到根目录并解压</span>
+ADD  test.tart.gz /
+
+<span class="token comment"># 与WORKDIR配合使用</span>
+WORKDIR /root
+ADD hello test/    <span class="token comment"># /root/test/hello</span>
+
+WORKDIR /root
+COPY hello test/
+</code></pre></div><p>功能：添加本地文件到docker image
+最佳实践：</p> <ul><li>大部分情况下COPY优于ADD</li> <li>ADD 除了 COPY 还有额外功能（解压）</li> <li>添加远程文件/目录请用curl或wget</li></ul> <h4 id="env"><a href="#env" class="header-anchor">#</a> ENV</h4> <div class="language-bash extra-class"><pre class="language-bash"><code>ENV MYSQL_VERSION <span class="token number">5.6</span>
+RUN <span class="token function">apt-get</span> <span class="token function">install</span> -y mysql-server<span class="token operator">=</span><span class="token string">&quot;<span class="token variable">${MYSQL_VERSION}</span>&quot;</span> <span class="token punctuation">\</span>
+		<span class="token operator">&amp;&amp;</span> <span class="token function">rm</span> -rf /var/lib/apt/lists/*    <span class="token comment"># 引用常量</span>
+</code></pre></div><p>功能：设置环境变量/常量
+最佳实践：对于常量多使用ENV增加dockerfile的可维护性</p> <h4 id="volume-expose"><a href="#volume-expose" class="header-anchor">#</a> VOLUME &amp; EXPOSE</h4> <h4 id="cmd-and-entrypoint"><a href="#cmd-and-entrypoint" class="header-anchor">#</a> CMD and ENTRYPOINT</h4> <ul><li>RUN: 执行命令并创建新的Image Layer</li> <li>CMD:
+<ul><li>容器启动后默认执行的命令和参数</li> <li>如果docker run 指定了其他命令 CMD命令被忽略</li> <li>如果定义了多个CMD，只有最后一个会执行</li></ul></li> <li>ENTRYPOINT：
+<ul><li>让容器以应用程序或者服务的形式运行（比如数据库服务）</li> <li>不会被忽略，一定会执行</li> <li>最佳实践：写一个shell脚本作为entrypoint</li></ul></li></ul> <p>Shell格式</p> <div class="language-bash extra-class"><pre class="language-bash"><code>RUN <span class="token function">apt-get</span> <span class="token function">install</span> -y <span class="token function">vim</span>
+CMD <span class="token builtin class-name">echo</span> <span class="token string">&quot;hello docker&quot;</span>
+ENTRYPOINT <span class="token builtin class-name">echo</span> <span class="token string">&quot;hello docker&quot;</span>
+</code></pre></div><p>Exec格式</p> <div class="language-bash extra-class"><pre class="language-bash"><code>RUN <span class="token punctuation">[</span><span class="token string">&quot;apt-get&quot;</span>, <span class="token string">&quot;install&quot;</span>, <span class="token string">&quot;-y&quot;</span>, <span class="token string">&quot;vim&quot;</span><span class="token punctuation">]</span>
+CMD <span class="token punctuation">[</span><span class="token string">&quot;/bin/echo&quot;</span>, <span class="token string">&quot;hello docker&quot;</span><span class="token punctuation">]</span>
+ENTRYPOINT <span class="token punctuation">[</span><span class="token string">&quot;bin/echo&quot;</span>, <span class="token string">&quot;hello docker&quot;</span><span class="token punctuation">]</span>
+</code></pre></div></div></section> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">2/22/2022, 3:17:02 PM</span></div></footer> <!----> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:12rem;" data-v-cb1513f6><li class="level-3" data-v-cb1513f6><a href="/views/article/Docker%E7%AC%94%E8%AE%B0.html#docker-image" class="sidebar-link reco-side-docker-image" data-v-cb1513f6>Docker Image</a></li><li class="level-3" data-v-cb1513f6><a href="/views/article/Docker%E7%AC%94%E8%AE%B0.html#docker-container" class="sidebar-link reco-side-docker-container" data-v-cb1513f6>Docker Container</a></li><li class="level-3" data-v-cb1513f6><a href="/views/article/Docker%E7%AC%94%E8%AE%B0.html#制作自己的docker-image-container" class="sidebar-link reco-side-制作自己的docker-image-container" data-v-cb1513f6>制作自己的docker image/container</a></li><li class="level-3" data-v-cb1513f6><a href="/views/article/Docker%E7%AC%94%E8%AE%B0.html#生成容器" class="sidebar-link reco-side-生成容器" data-v-cb1513f6>生成容器</a></li><li class="level-3" data-v-cb1513f6><a href="/views/article/Docker%E7%AC%94%E8%AE%B0.html#终止容器" class="sidebar-link reco-side-终止容器" data-v-cb1513f6>终止容器</a></li></ul></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/assets/js/app.5a2ae76a.js" defer></script><script src="/assets/js/4.ff477fe3.js" defer></script><script src="/assets/js/1.2851c76d.js" defer></script><script src="/assets/js/19.4ddc72f1.js" defer></script>
+  </body>
+</html>
